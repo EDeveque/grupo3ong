@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.dog-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.dog-profile {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.dog-profile:hover {
+    transform: translateY(-10px);
+}
+
+.dog-profile img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.dog-profile h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+.dog-profile p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+.more-information {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.more-information p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .dog-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .dog-profile {
+        padding: 15px;
+    }
+
+    .dog-profile h3 {
+        font-size: 1.2em;
+    }
+
+    .dog-profile p {
+        font-size: 0.9em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    .more-information p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }   
+
+    .dog-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .dog-profile img {
+        max-height: 150px;
+    }
+
+    .dog-profile h3 {
+        font-size: 1em;
+    }
+
+    .dog-profile p {
+        font-size: 0.8em;
+    }
+}
