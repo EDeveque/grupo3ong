@@ -57,9 +57,10 @@ h2 {
 
 .dog-profile img {
     width: 100%;
+    height: auto; /* Mantém a proporção */
     border-radius: 10px;
-    max-height: 200px;
-    object-fit: cover;
+    object-fit: contain; /* Garante que a imagem inteira seja visível */
+    object-position: center; /* Centraliza a imagem dentro do contêiner */
 }
 
 .dog-profile h3 {
@@ -146,14 +147,16 @@ footer p {
 
     header p {
         font-size: 0.9em;
-    }   
+    }
 
     .dog-gallery {
         grid-template-columns: 1fr;
     }
 
     .dog-profile img {
-        max-height: 150px;
+        max-height: unset; /* Remove a limitação de altura */
+        height: auto; /* Mantém a proporção */
+        width: 100%; /* Ajusta à largura do contêiner */
     }
 
     .dog-profile h3 {
